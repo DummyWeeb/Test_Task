@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while true; do
+  echo "$(date '+%F %T') - Скрипт test работает" >> /var/log/test.log
+  sleep 10
+done

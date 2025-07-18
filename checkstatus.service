@@ -1,0 +1,10 @@
+[Unit]
+Description=Start checktest.sh when system gone
+After=default.target
+
+[Service]
+Restart=on-Failure
+ExecStart=/home/checktest.sh
+
+[Install]
+WantedBy=default.target
